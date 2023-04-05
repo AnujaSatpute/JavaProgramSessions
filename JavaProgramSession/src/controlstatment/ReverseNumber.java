@@ -5,13 +5,12 @@ import java.util.Scanner;
 public class ReverseNumber {
 
 	void reverseNumber() {
-		int s, e,num=0;
+		int s,num=0;
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the Number  :");
 		s = sc.nextInt();
-		//System.out.println("Enter the End Point :");
-		//e = sc.nextInt();
+		
 		
 		while(s!=0) {
 			
