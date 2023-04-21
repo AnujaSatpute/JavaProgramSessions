@@ -1,4 +1,4 @@
-package looping;
+package patternandfor;
 
 public class NumberPattern {
 
