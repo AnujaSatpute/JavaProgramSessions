@@ -6,10 +6,9 @@ public class AddressPersonMain {
 		// TODO Auto-generated method stub
 
 		Address add1 = new Address();
-		add1.setCity("Pune");
-		add1.setState("Maharashtra");
-		add1.setCountry("India");
-		
+		/*
+		 * add1.setCity("Pune"); add1.setState("Maharashtra"); add1.setCountry("India");
+		 */
 		Address add2 = new Address();
 		add2.setCity("chicago");
 		add2.setState("US");
@@ -20,6 +19,9 @@ public class AddressPersonMain {
 		p1.setName("Aishwarya");
 		p1.setContact(8956624);
 		p1.setAdd(add1);
+		p1.getAdd().setCity("pune");
+		p1.getAdd().setCountry("Maharastra");
+		p1.getAdd().setState("India");
 		
 		Person p2 = new Person();
 		p2.setId(4562);
