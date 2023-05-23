@@ -42,8 +42,8 @@ public class BasicMethods_String {
 		System.out.println(Arrays.toString(ch));
 		String s5 = "Hello#World";
 		String[] ss = s5.split("#");
-	    
-		System.out.println("String split : "+Arrays.toString(ss));
+
+		System.out.println("String split : " + Arrays.toString(ss));
 
 	}
 
