@@ -20,18 +20,22 @@ public class PrimeNumber {
 	        array[i] = in.nextInt();
 	    }
 	
-	    for(int i=1; i<array.length; i++){
+	    for(int i=0; i<array.length; i++){
 	        boolean isPrime = true;
-	        for (int j=2; j<i/2; j++){
-
-	            if(array[i]%array[j]==0){
-	                isPrime = false;
-	                break;
-	            }
+	        if (array[i] == 1)
+                isPrime = false;
+            else {
+                // check to see if the numbers are prime
+                for (int j = 2; j <= array[i] / 2; j++) {
+                    if (array[i] % j == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+	
 	        }
-	        if(isPrime == true && array[i]!=1)
-
-	            System.out.println(array[i] + " are the prime numbers in the array ");
+	        if(isPrime)
+	        	System.out.println(array[i] + " are the prime numbers in the array ");
 	        else
 		    	System.out.println(array[i]+"are not the prime numbers in the array");
 	    }
